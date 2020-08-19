@@ -4,15 +4,17 @@ body {
 
 }
 .header {
+    text-align: center;
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     margin: auto;
 }
-.logo {
-    height: 120px;
-    background: url(./img/logo.png) no-repeat center;  
-    margin-bottom: 6px;
-}
+ .log {
+    text-align: center;
+     height: 120px;
+    background: url(./img/logo.svg) no-repeat center;  
+    margin-bottom: 6px; 
+ }
 
 .logo-address {
     font-size: 12px;
@@ -23,8 +25,7 @@ body {
 }
 
 section {
-    max-width: 798px;
-    width: 90%;
+    width: 718px;
     padding: 0 40px;
     margin: auto;
     margin-bottom: 100px;
@@ -35,13 +36,13 @@ section {
 }
 
 .title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    margin-bottom: 2px;
+    margin:0;
 }
 
 .address-text {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .invoice {
@@ -51,20 +52,20 @@ section {
 }
 
 .bill-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     padding-top: 20px;
     margin: 0;
 }
 
 .bill-subtitle {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 100;
     margin-top: 0;
 }
 
 .bill-address {
-    font-size: 14px;
+    font-size: 13px;
     margin: 0;
 }
 
@@ -76,24 +77,25 @@ td, th {
     border: 1px solid;
 }
 .invoice-table th {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     border:none;
     text-align: right;
 }
 .invoice-table td {
-    width: 250px;
-    font-size: 13px;
+    width: 200px;
+    font-size: 12px;
     font-weight: bold;
     text-align: right;
 }
 
 .invoice-table td:first-of-type {
-    width: 150px;
+    width: 120px;
 }
 
 .discription-table {
     width: 100%;
+    font-size: 13px;
 }
 
 .discription {
@@ -103,19 +105,33 @@ td, th {
     text-align-last: left;  
 }
 
+.discription-table td {
+    text-align: right;
+}
+
+.discription-table td:first-of-type {
+    text-align: left;
+    width: 40%;
+}
+
+.discription-table td:nth-child(3) {
+    text-align:left;
+}
+
 .discription-table tr:last-of-type {
     font-weight: bold;
 }
 
 .bank {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 15px;
 }
 .bank-details {
-    width: 22%;
-    font-size: 11px;
-    margin-right: 11%;
+    width: 23%;
+    font-size: 10px;
+   margin-right: 7%;
     margin-bottom: 25px;
 }
 
@@ -140,7 +156,6 @@ td, th {
 
 .footer-title {
     display: block;
-    
 }
 
 .footer-title::before,

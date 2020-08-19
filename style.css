@@ -156,6 +156,7 @@ td, th {
 
 .footer-title {
     display: block;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .footer-title::before,

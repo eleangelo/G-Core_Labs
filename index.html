@@ -3,7 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.header {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+.logo {
+    height: 120px;
+    background: url(./img/logo.png) no-repeat center;  
+    margin-bottom: 6px;
+}
+
+.logo-address {
+    font-size: 12px;
+    font-weight:100;
+    text-align: center;
+    margin: 0;
+    color: rgb(106, 106, 106);
+}
+
+section {
+    max-width: 798px;
+    width: 90%;
+    padding: 0 40px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.address {
+    margin-bottom: 55px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.address-text {
+    font-size: 14px;
+}
+
+.invoice {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.bill-title {
+    font-size: 18px;
+    font-weight: normal;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.bill-subtitle {
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+.bill-address {
+    font-size: 14px;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid;
+}
+.invoice-table th {
+    font-size: 18px;
+    font-weight: normal;
+    border:none;
+    text-align: right;
+}
+.invoice-table td {
+    width: 250px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.invoice-table td:first-of-type {
+    width: 150px;
+}
+
+.discription-table {
+    width: 100%;
+}
+
+.discription {
+    margin-bottom: 150px;
+}
+.discription-table th:first-of-type {
+    text-align-last: left;  
+}
+
+.discription-table tr:last-of-type {
+    font-weight: bold;
+}
+
+.bank {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.bank-details {
+    width: 22%;
+    font-size: 11px;
+    margin-right: 11%;
+    margin-bottom: 25px;
+}
+
+.detalis {
+    margin: 0;
+    border-bottom: 1px solid;
+}
+
+.bold {
+    margin: 0;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.footer-line {
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 115, 0);
+}
+
+.footer-title {
+    display: block;
+    
+}
+
+.footer-title::before,
+.footer-title::after   {
+    content: "";
+    display: inline-block;
+    vertical-align:middle;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(255, 115, 0);
+    position: relative;
+}
+
+.footer-title::before {
+    margin-left: -100%;
+    left: -10px;
+}
+
+.footer-title::after {
+    margin-right: -100%;
+    right: -10px;
+}
+
+.footer-address  {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(106, 106, 106);
+    padding: 20px;   
+}
+
+.footer-address p{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>GCL</title>
 </head>
 <body>

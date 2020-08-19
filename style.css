@@ -5,8 +5,8 @@ body {
 }
 .header {
     padding-top: 10px;
-   padding-bottom: 30px;
-   margin: auto;
+    padding-bottom: 30px;
+    margin: auto;
 }
 .logo {
     height: 120px;
@@ -38,7 +38,6 @@ section {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 2px;
-
 }
 
 .address-text {
@@ -87,7 +86,6 @@ td, th {
     font-size: 13px;
     font-weight: bold;
     text-align: right;
-
 }
 
 .invoice-table td:first-of-type {
@@ -102,8 +100,7 @@ td, th {
     margin-bottom: 150px;
 }
 .discription-table th:first-of-type {
-    text-align-last: left;
-    
+    text-align-last: left;  
 }
 
 .discription-table tr:last-of-type {
@@ -114,25 +111,24 @@ td, th {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 15px;
-
 }
- .bank-details {
-     width: 22%;
-     font-size: 11px;
-     margin-right: 11%;
-     margin-bottom: 25px;
- }
+.bank-details {
+    width: 22%;
+    font-size: 11px;
+    margin-right: 11%;
+    margin-bottom: 25px;
+}
 
- .detalis {
-     margin: 0;
-     border-bottom: 1px solid;
- }
+.detalis {
+    margin: 0;
+    border-bottom: 1px solid;
+}
 
- .bold {
-     margin: 0;
-     font-size: 11px;
-     font-weight: bold;
- }
+.bold {
+    margin: 0;
+    font-size: 11px;
+    font-weight: bold;
+}
 
 .footer-line {
     overflow: hidden;
@@ -156,7 +152,6 @@ td, th {
     height: 10px;
     background-color: rgb(255, 115, 0);
     position: relative;
-
 }
 
 .footer-title::before {
@@ -167,15 +162,13 @@ td, th {
 .footer-title::after {
     margin-right: -100%;
     right: -10px;
-
 }
 
 .footer-address  {
     font-size: 12px;
     text-align: center;
     color: rgb(106, 106, 106);
-    padding: 20px;
-    
+    padding: 20px;   
 }
 
 .footer-address p{

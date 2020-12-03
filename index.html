@@ -25,7 +25,7 @@ body {
 }
 
 section {
-    width: 718px;
+    width: 90%;
     padding: 0 40px;
     margin: auto;
     margin-bottom: 100px;
@@ -38,35 +38,13 @@ section {
 .title {
     font-size: 16px;
     font-weight: 400;
-    margin:0;
+    margin-bottom: 5px;
 }
 
 .address-text {
     font-size: 13px;
-}
-
-.invoice {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 80px;
-}
-
-.bill-title {
-    font-size: 16px;
-    font-weight: normal;
-    padding-top: 20px;
     margin: 0;
-}
-
-.bill-subtitle {
-    font-size: 13px;
-    font-weight: 100;
-    margin-top: 0;
-}
-
-.bill-address {
-    font-size: 13px;
-    margin: 0;
+    margin-bottom: 5px;
 }
 
 table {
@@ -76,17 +54,45 @@ table {
 td, th {
     border: 1px solid;
 }
+
+.invoice {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.invoice td {
+    border:none;
+}
+
+.bill-table th  {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    border:none
+}
+
+.bill-table td {
+    font-size: 13px;
+    font-weight: 100;
+    border:none;
+}
+
+.invoice-table {
+    width: 100%
+}
+
 .invoice-table th {
     font-size: 16px;
     font-weight: normal;
     border:none;
     text-align: right;
 }
+
 .invoice-table td {
-    width: 200px;
     font-size: 12px;
     font-weight: bold;
     text-align: right;
+    border: 1px solid; 
 }
 
 .invoice-table td:first-of-type {
@@ -96,11 +102,9 @@ td, th {
 .discription-table {
     width: 100%;
     font-size: 13px;
-}
-
-.discription {
     margin-bottom: 150px;
 }
+
 .discription-table th:first-of-type {
     text-align-last: left;  
 }
@@ -122,28 +126,23 @@ td, th {
     font-weight: bold;
 }
 
-.bank {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.bank-table { 
     margin-bottom: 15px;
 }
-.bank-details {
-    width: 23%;
+
+.bank-table td {
     font-size: 10px;
-   margin-right: 7%;
-    margin-bottom: 25px;
+    border:none;
+    padding-right: 20px;
+    width: 25%;
 }
 
-.detalis {
-    margin: 0;
-    border-bottom: 1px solid;
-}
-
-.bold {
-    margin: 0;
-    font-size: 11px;
-    font-weight: bold;
+.bank-table td:last-of-type {
+    pading: 0;
+}  
+.bank-title {
+    padding-bottom: 5px;
+    border-bottom:black 1px solid
 }
 
 .footer-line {
@@ -413,94 +412,131 @@ td, th {
     <section >
         <div class="address">
             <p class="title">G-Core Labs S.A.</p>
-            <span class="address-text">2A, Rue Albert Borschette <br>L-1246 LUXEMBOURG</span>
+            <p class="address-text">2A, Rue Albert Borschette</p> 
+            <p class="address-text">L-1246 LUXEMBOURG</p>
         </div>
-        <div class="invoice">
-            <div class="bill">
-                <h2 class="bill-title">BILL TO</h2>
-                    <p class="bill-subtitle">Peer5, Inc. </p>
-                    <p class="bill-address">550 S. CALIFORNIA AVE SUITE 1,<br > PALO ALTO CA 00000 <br> USA <br>VAT number: </p>
-            </div>
-                <div class="invoice-info">
-                    <table class="invoice-table"> 
+            <table class="invoice">
+                <tbody>
                     <tr>
-                        <th>INVOICE</th>
-                    </tr>     
-                    <tr>
-                        <td class="lc">DATE:</td>
-                        <td>30.04.2020</td>
+                        <td>
+                            <table class="bill-table">
+                                <tr>
+                                    <th>BILL TO</th>
+                                </tr>
+                                <tr>
+                                    <td>Peer5, Inc.</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>550 S. CALIFORNIA AVE SUITE 1,</td>
+                                </tr>
+                                <tr>
+                                    <td>PALO ALTO CA 00000</td>
+                                </tr>
+                                <tr>
+                                    <td>USA</td>
+                                </tr>
+                                <tr>
+                                    <td>VAT number:</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="invoice-table"> 
+                                <tr>
+                                    <th>INVOICE</th>
+                                </tr>     
+                                <tr>
+                                    <td class="lc">DATE:</td>
+                                    <td>30.04.2020</td>
+                                </tr>
+                                <tr>
+                                    <td class="lc">INVOICE #</td>
+                                    <td>0090046594</td>
+                                </tr>
+                                <tr>
+                                        <td class="lc">PERIOD</td>
+                                    <td>April 2020</td>
+                                </tr>
+                                <tr>
+                                    <td >PUR. ORDER</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>TOTAL NET</td>
+                                    <td>4 021,50 USD </td>
+                                </tr>
+                                <tr>
+                                    <td>VAT (0.00%)</td>
+                                    <td>0,00 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>TOTAL</td>
+                                    <td>4 021,50 USD</td>
+                                </tr>
+                            </table>
+                        </td>
                     </tr>
-                    <tr>
-                        <td class="lc">INVOICE #</td>
-                        <td>0090046594</td>
-                    </tr>
-                    <tr>
-                        <td class="lc">PERIOD</td>
-                        <td>April 2020</td>
-                    </tr>
-                    <tr>
-                        <td >PUR. ORDER</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>TOTAL NET</td>
-                        <td>4 021,50 USD </td>
-                    </tr>
-                    <tr>
-                        <td>VAT (0.00%)</td>
-                        <td>0,00 USD</td>
-                    </tr>
-                    <tr>
-                        <td>TOTAL</td>
-                        <td>4 021,50 USD</td>
-                    </tr>
-                    </table>
-                </div>     
-        </div>
-<div class="discription">
-<table class="discription-table">
-    <tr>
-        <th>Description</th>
-        <th>Qty</tdh>
-        <th>Unit</th>
-        <th>Unit price</th>
-        <th>Net value USD</th>
-    </tr>
-    <tr>
-        <td>CDN-HTTP/HTTPS Delivery (GB) Overcommitment Period: 01.04.2020 - 30.04.2020</td>
-        <td> 1 218 635</td>
-        <td>GB</td>
-        <td>0,0033</td>
-        <td>4 021,50</td>
-    </tr>
-    <tr>
-        <td>Reverse Charge Supply, Customer VAT Number</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>0,00</td>
-    </tr>
-</table>
-</div>
-    <div class="bank">
-        <div class="bank-details">
-            <p class="detalis">Bank details for payments in EUR:</p>
-             <p class="bold">Receiving Bank</p> BANQUE INTERNATIONALE A LUXEMBOURG SA<br> <span class="bold">SWIFT:</span> BILLLULL Beneficiary Account  <br> <span class="bold">IBAN:</span> LU430023210073011800   
-        </div>
-        <div class="bank-details">
-            <p class="detalis">Bank details for payments in USD:</p>
-            <p class="bold">Receiving Bank</p> 
-            BANQUE INTERNATIONALE A LUXEMBOURG SA <br><span class="bold">SWIFT:</span> BILLLULL Beneficiary Account  <br> <span class="bold">IBAN:</span> LU120023210073011000
-        </div>
-        <div class="bank-details">
-            <p class="detalis">Bank details for payments in RUB:</p>
-             <p class="bold">Receiving Bank</p> BANQUE INTERNATIONALE A LUXEMBOURG SA <br> <span class="bold">SWIFT:</span> BILLLULL Beneficiary Account <br> <span class="bold">IBAN:</span> LU580022210073017400 
-        </div>
-        <div class="bank-details">
-            <p class="detalis">Information for PayPal payments:</p> PAYPAL: INVOICE@GCORE.LU 
-        </div>
-        </div>
-    </section>
+                </tbody> 
+            </table>        
+            <table class="discription-table">
+                <tr>
+                    <th>Description</th>
+                    <th>Qty</tdh>
+                    <th>Unit</th>
+                    <th>Unit price</th>
+                    <th>Net value USD</th>
+                </tr>
+                <tr>
+                    <td>CDN-HTTP/HTTPS Delivery (GB) Overcommitment Period: 01.04.2020 - 30.04.2020</td>
+                    <td>1 218 635</td>
+                    <td>GB</td>
+                    <td>0,0033</td>
+                    <td>4 021,50</td>
+                </tr>
+                <tr>
+                    <td>Reverse Charge Supply, Customer VAT Number</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0,00</td>
+                </tr>
+            </table>
+            <table class="bank-table">
+                <tr>
+                    <td><div class="bank-title">Bank details for payments in EUR:</div> </td>
+                    <td><div class="bank-title">Bank details for payments in USD:</div></td>
+                    <td><div class="bank-title">Bank details for payments in RUB:</div></td>
+                    <td><div class="bank-title">Information for PayPal payments:</div></td>
+                </tr>
+                <tr>
+                    <td><span class="bold">Receiving Bank</span></td>
+                    <td><span class="bold">Receiving Bank</span></td>
+                    <td><span class="bold">Receiving Bank</span></td>
+                    <td>PAYPAL: INVOICE@GCORE.LU</td>
+                </tr>
+                <tr>
+                    <td>BANQUE INTERNATIONALE A LUXEMBOURG SA</td>
+                    <td>BANQUE INTERNATIONALE A LUXEMBOURG SA</td>
+                    <td>BANQUE INTERNATIONALE A LUXEMBOURG SA</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="bold">SWIFT:</span> BILLLULL Beneficiary Account</td>
+                    <td><span class="bold">SWIFT:</span> BILLLULL Beneficiary Account</td>
+                    <td><span class="bold">SWIFT:</span> BILLLULL Beneficiary Account</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="bold">IBAN:</span>LU120023210073011000</td>
+                    <td><span class="bold">IBAN:</span>LU120023210073011000</td>
+                    <td><span class="bold">IBAN:</span>LU120023210073011000</td>
+                    <td></td>
+                </tr>
+            </table> 
+    </section> 
     <footer class="footer">
         <div class="footer-line">
             <span class="footer-title">G-Core Labs S. A.</span>
